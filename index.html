@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/styles.min.css">
+  <title>Пример подключения плеера</title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <div id="player" class="video-player">
+    <div class="js-video-container video-container"></div>
+    <div class="wrapper">
+
+      <button class="js-play-button button">
+        <i class="fa fa-play" aria-hidden="true"></i>
+      </button>
+
+      <button class="js-pause-button button pause-button">
+        <i class="fa fa-pause"></i>
+      </button>
+
+      <button class="js-volume-button button">
+        <i class="fa fa-volume-off" aria-hidden="true"></i>
+      </button>
+
+      <button class="js-mute-button button">
+        <i class="fa fa-volume-up" aria-hidden="true"></i>
+      </button>
+
+      <div class="spacer"></div>
+
+       <button class="js-fullscreen-button button">
+         <i class="fa fa-expand" aria-hidden="true"></i>
+       </button>
+
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://unpkg.com/playable@2.10.3/dist/statics/playable.bundle.min.js"></script>
+  <script src="player.js"></script>
+  <script type="text/javascript">
+    createPlayer({elementId: 'player'});
+  </script>
+</body>
+</html>
