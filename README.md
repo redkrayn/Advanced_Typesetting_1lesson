@@ -9,12 +9,9 @@
 
 Построен на базе библиотеки [Playable](https://wix.github.io/playable/).
 
-## Примеры
+## Пример
 
-Два рабочих примера:
-
-- Страница с минимальными настройками — [example_min.html](./example_min.html)
-- Страница с максимальными настройками — [example_max.html](./example_max.html)
+Пример сайта можно посмотреть здесь: https://redkrayn.github.io/Advanced_Typesetting_1lesson/
 
 ## Как подключить
 
