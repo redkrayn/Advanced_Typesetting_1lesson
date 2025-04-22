@@ -11,13 +11,13 @@
   flex-grow: 1
 }
 
-.wrapper {
+.video-wrapper {
   background-color: black;
   flex-shrink: 0;
   display: flex
 }
 
-.button {
+.video-button {
   border: none;
   color: white;
   background-color: transparent;
@@ -31,4 +31,8 @@
 
 .full-screen {
   flex-grow: 1
+}
+
+.video-spacer {
+  flex: 1;
 }
