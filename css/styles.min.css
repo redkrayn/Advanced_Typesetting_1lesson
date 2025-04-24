@@ -26,7 +26,11 @@
   width: 25px;
   height: 25px;
   margin: 1px
+}
 
+.video-button i {
+  width: 15px;
+  height: 15px;
 }
 
 .full-screen {
