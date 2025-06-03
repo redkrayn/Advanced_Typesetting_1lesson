@@ -1,3 +1,8 @@
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 .video-player {
   width: 800px;
   height: 600px;
@@ -22,21 +27,96 @@
   color: white;
   background-color: transparent;
   cursor: pointer;
-  font-size 20px
-  width: 25px;
-  height: 25px;
-  margin: 1px
+  width: 30px;
+  height: 40px;
+  margin-right: 6px
+}
+
+.video-button:hover {
+  opacity: 0.8;
+}
+
+.video-button:active {
+  transform: scale(0.95);
+}
+
+.video-button .fa {
+    font-size: 20px;
 }
 
 .video-button i {
-  width: 15px;
+  width: 25px;
   height: 15px;
+
 }
 
 .full-screen {
   flex-grow: 1
 }
 
-.video-spacer {
-  flex: 1;
+.player-time {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  margin-left: 2px;
+  display: flex;
+  align-items: center;
+}
+
+.progress-container {
+  flex-grow: 1;
+  margin: 15px 15px 0px 10px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.js-progress {
+  position: relative;
+  width: 100%;
+  height: 5px;
+  background-color: black;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: height 0.2s;
+  top: -5px;
+}
+
+.js-progress-slider {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 30%;
+  background-color: red;
+  border-radius: 2px;
+  transition: width 0.1s linear;
+}
+
+.js-progress-slider::after {
+  content: '';
+  position: absolute;
+  right: -8px;
+  top: 50%;
+  width: 9px;
+  height: 9px;
+  background: red;
+  border: 4px solid white;
+  border-radius: 50%;
+  transform: translateY(-50%) scale(0.8);
+  opacity: 0;
+  pointer-events: none;
+  transition-property: opacity, transform;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in;
+}
+
+.js-progress:hover {
+  height: 6px;
+}
+
+.js-progress:hover .js-progress-slider::after {
+  opacity: 1;
+  transform: translateY(-50%) scale(1);
+  transition-timing-function: ease-out;
 }
